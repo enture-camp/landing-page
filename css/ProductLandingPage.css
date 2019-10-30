@@ -26,16 +26,23 @@ body.rtl {
 }
 
 #headline {
+    background-color: rgba(69, 69, 69, 0.7);
+    border-radius: 5px;
+    padding: 0.5em 1.5em;
     color: #FFF;
-    text-shadow: -1px -1px 0 #454545, 1px -1px 0 #454545, -1px 1px 0 #454545, 1px 1px 0 #454545, 0 0 4px #000;
     margin: 0 auto;
     width: 33%;
     margin: 0;
     position: absolute;
     top: 50%;
-    left: 70%;
+    left: 75%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+}
+
+#headline h1 {
+    text-align: center;
+    padding: 0.3em;
 }
 
 h3 {
