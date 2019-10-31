@@ -87,6 +87,7 @@
         float: left !important;
         margin-left: 35px !important;
         margin-bottom: 0 !important;
+        left: auto !important;
     }
     .ps-timeline-sec .container ol.ps-timeline li .img-handler-top img {
         margin: 0 auto !important;
@@ -99,6 +100,7 @@
         float: left !important;
         margin-left: 35px !important;
         margin-bottom: 0 !important;
+        left: auto !important;
     }
     .ps-timeline-sec .container ol.ps-timeline li p {
         text-align: left !important;
@@ -225,22 +227,29 @@
     bottom: 0;
     margin-bottom: 130px;
     width: 100%;
+    width: 50%;
+    left: 25%;
 }
 
 .ps-timeline-sec .container ol.ps-timeline li .img-handler-top img {
     display: table;
     margin: 0 auto;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .ps-timeline-sec .container ol.ps-timeline li .img-handler-bot {
     position: absolute;
     margin-top: 60px;
-    width: 100%;
+    width: 50%;
+    left: 25%;
 }
 
 .ps-timeline-sec .container ol.ps-timeline li .img-handler-bot img {
     display: table;
     margin: 0 auto;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .ps-timeline-sec .container ol.ps-timeline li p {
