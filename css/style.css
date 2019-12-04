@@ -99,8 +99,7 @@ section h2 {
     text-align: center;
 }
 
-#what-you-will-learn-boxes li>div,
-#road-map-boxes li>div {
+#what-you-will-learn-boxes li>div {
     background-color: #F4F4F4;
     border-radius: 5px;
     overflow: hidden;
@@ -175,11 +174,6 @@ div.autor {
 }
 
 #about-us {}
-
-#road-map {
-    direction: ltr;
-    padding: 1em;
-}
 
 #subdiv {
     text-align: center;
