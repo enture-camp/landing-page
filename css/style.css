@@ -55,16 +55,35 @@ p {
     padding-top: 0.3em;
 }
 
+#intro {
+    width: 100%;
+}
+
+.text {
+    width: 100%;
+    column-width: 30em;
+    -webkit-column-width: 30em;
+    -moz-column-width: 30em;
+    column-fill: balance;
+    -moz-column-fill: balance;
+    -webkit-column-fill: balance;
+    box-sizing: border-box;
+}
+
 .content {
     background-color: #F4F4F4;
     height: auto;
     margin: auto;
-    display: grid;
-    grid-template-columns: 3fr;
-    grid-template-rows: minmax(max-content, 2fr);
-    grid-gap: 2em;
+    /*display: grid;*/
+    /*grid-template-columns: 3fr;*/
+    /*grid-template-rows: minmax(max-content, 2fr);*/
+    /*grid-gap: 2em;*/
     position: relative;
     border-top: 1px solid #e7e8ec;
+}
+
+section {
+    padding: 0 1em 3em;
 }
 
 .content>section:nth-child(even) {
@@ -73,10 +92,10 @@ p {
 
 .flex-box {
     max-width: 1300px;
-    margin: 2vh auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin: 0 auto;
 }
 
 .flex-list {
@@ -97,6 +116,9 @@ section p {
 
 section h2 {
     text-align: center;
+    padding-top: 1.5em;
+    padding-bottom: 0.6em;
+    font-size: 1.65em;
 }
 
 #what-you-will-learn-boxes li>div {
@@ -106,6 +128,7 @@ section h2 {
     color: #454545;
     box-sizing: border-box;
     text-align: center;
+    padding-bottom: 1em;
 }
 
 #who-will-benefit-boxes li>div {
@@ -115,6 +138,7 @@ section h2 {
     color: #454545;
     box-sizing: border-box;
     text-align: center;
+    padding-bottom: 1em;
 }
 
 #testimonial blockquote {
@@ -141,10 +165,6 @@ section h2 {
     -moz-transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
     -o-transform: rotate(45deg);
-}
-
-#testimonial div {
-    margin-bottom: 1.5em;
 }
 
 img.autor_pic {
@@ -209,31 +229,31 @@ footer {
     text-align: center;
 }
 
-.navdiv a {
-    padding: 10px 12px;
-    text-decoration: bold;
-    font-size: 1em;
-}
+/*.navdiv a {*/
+    /*padding: 10px 12px;*/
+    /*text-decoration: bold;*/
+    /*font-size: 1em;*/
+/*}*/
 
-a:link {
-    text-decoration: none;
-    color: black;
-}
+/*a:link {*/
+    /*text-decoration: none;*/
+    /*color: black;*/
+/*}*/
 
-a:visited {
-    text-decoration: none;
-    color: black;
-}
+/*a:visited {*/
+    /*text-decoration: none;*/
+    /*color: black;*/
+/*}*/
 
-a:hover {
-    text-decoration: none;
-    color: rgb(108, 21, 7);
-    background-color: black;
-}
+/*a:hover {*/
+    /*text-decoration: none;*/
+    /*color: rgb(108, 21, 7);*/
+    /*background-color: black;*/
+/*}*/
 
-a:active {
-    text-decoration: none;
-}
+/*a:active {*/
+    /*text-decoration: none;*/
+/*}*/
 
 .btn {
     border: 0px !important;
@@ -335,13 +355,14 @@ textarea {
 }
 
 input.contact-submit {
+    width: 15em;
     color: #fff;
     border: 1px solid #03d7ab;
     background-color: #03d7ab;
     cursor: pointer;
     display: inline-block;
-    font-size: 13px;
-    font-weight: 500;
+    font-size: 1.2em;
+    font-weight: 700;
     padding: 14px 35px;
     position: relative;
     text-transform: uppercase;
@@ -362,6 +383,10 @@ input.contact-submit:hover {
     -webkit-transition: all .50s ease-in-out;
 }
 
+.submit-button {
+    text-align: center;
+}
+
 #contact-form input.contact-input:focus,
 #contact-form textarea.contact-commnent:focus {
     color: #656565;
@@ -370,17 +395,33 @@ input.contact-submit:hover {
 }
 
 #contact-form {
-    text-align: left;
-}
-
-.rtl .submit-button {
-    text-align: left;
+    text-align: center;
 }
 
 p.contact_success_box {
     color: #454545;
     font-size: 20px;
     font-style: italic;
+}
+
+#language {
+    padding: 0.4em 0.8em;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    position: absolute;
+    top: 0.65em;
+    right: 1em;
+}
+
+#language, #language > a, #language > a:hover, #language > a:active  {
+    font-size: 1.05em;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+#language > a:hover {
+    font-weight: normal;
 }
 
 footer {
