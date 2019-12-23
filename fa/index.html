@@ -8,6 +8,7 @@
 
     gtag('config', 'UA-142986755-1');
   </script>
+  <script src="js/core.js"></script>
   <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
   <title>اِنچر کمپ: پلتفرم مهارت&zwnj;های کار‌آفرینی</title>
   <link rel="stylesheet" href="/css/roadmap.css">
@@ -209,7 +210,8 @@
           </div>
           <p class="submit-button">
             <a href="https://forms.gle/HTXpxPT5ufjvtREr6">
-            <input type="button" value="فرم عضویت" class="contact-submit" />
+            <!-- <input type="button" value="فرم عضویت" class="contact-submit" /> -->
+            <span class="contact-submit">فرم عضویت</span>
             </a>
           </p>
         </div>
@@ -224,7 +226,8 @@
             <input class="contact-input white-input" type="text" required name="name" placeholder="نام" />
             <input class="contact-input white-input" type="email" required name="email" placeholder="ایمیل شما" />
             <textarea class="contact-commnent white-input" rows="2" cols="20" name="message" placeholder="پیغام..."></textarea>
-            <input type="submit" value="ارسال" id="submit-button" class="contact-submit" />
+            <!-- <input type="submit" value="ارسال" id="submit-button" class="contact-submit" /> --->
+            <span id="submit-button" onclick="clicked()" class="contact-submit">ارسال</span>
           </form>
         </div>
       </div>
@@ -234,4 +237,3 @@
     <p>&copy; کلیه حقوق برای پلتفرم مهارت&zwnj;های کارآفرینی محفوظ است.</p>
   </footer>
 </body>
-
