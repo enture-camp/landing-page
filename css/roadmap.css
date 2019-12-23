@@ -79,7 +79,6 @@
 
 .timeline > li > .timeline-text {
     position: absolute;
-    right: 30%;
     top: 1.5em;
     text-align: center;
     font-size: 1.3em;
@@ -179,6 +178,7 @@
         transform: none !important;
         text-align: left;
         padding-top: 4em;
+        font-size: 1em !important;
     }
 
     .rtl .timeline > li > .timeline-text {
