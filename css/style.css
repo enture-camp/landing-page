@@ -434,20 +434,17 @@ p.contact_success_box {
 }
 
 #language {
-    padding: 0.4em 0.8em;
-    background-color: rgba(0, 0, 0, 0.4);
-    border-radius: 8px;
     position: absolute;
     top: 0.65em;
     right: 1em;
 }
 
-
-#language {
+#language > a, #language > a:hover, #language > a:active  {
+    text-decoration: none;
+    cursor: pointer;
     color: #fff;
     border: 1px solid #03d7ab;
     background-color: #03d7ab;
-    cursor: pointer;
     display: inline-block;
     font-size: 1.2em;
     font-weight: 700;
@@ -459,27 +456,15 @@ p.contact_success_box {
     border-radius: 3px 3px;
     transition: all .50s ease-in-out;
     -moz-transition: all .50s ease-in-out;
-    -webkit-transition: all .50s ease-in-out;
-}
+    -webkit-transition: all .50s ease-in-out;}
 
-#language:hover {
+#language > a:hover {
     color: #fff;
     background-color: #242f32;
     border: 1px solid #242f32;
     transition: all .50s ease-in-out;
     -moz-transition: all .50s ease-in-out;
     -webkit-transition: all .50s ease-in-out;
-}
-
-#language, #language > a, #language > a:hover, #language > a:active  {
-    font-size: 1.05em;
-    font-weight: bold;
-    color: white;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-#language > a:hover {
 }
 
 footer {
