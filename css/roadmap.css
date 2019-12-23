@@ -79,6 +79,7 @@
 
 .timeline > li > .timeline-text {
     position: absolute;
+    right: 30%;
     top: 1.5em;
     text-align: center;
 }

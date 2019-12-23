@@ -61,13 +61,20 @@ p {
 
 .text {
     width: 100%;
-    column-width: 30em;
-    -webkit-column-width: 30em;
-    -moz-column-width: 30em;
-    column-fill: balance;
-    -moz-column-fill: balance;
-    -webkit-column-fill: balance;
     box-sizing: border-box;
+    max-width: 50em;
+    margin: 0 auto;
+}
+
+#intro a, a:active, a:hover {
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    color: inherit;
+}
+
+#intro a:hover{
+    font-weight: normal;
 }
 
 .content {
@@ -105,8 +112,13 @@ section {
     list-style: none;
 }
 
+.flex-list > li > div {
+    padding: 0.25em;
+}
+
 .flex-list img {
     width: 100%;
+    border-radius: 5px;
 }
 
 section p {
@@ -139,6 +151,10 @@ section h2 {
     box-sizing: border-box;
     text-align: center;
     padding-bottom: 1em;
+}
+
+#testimonial {
+    margin-top: 2.5em;
 }
 
 #testimonial blockquote {
@@ -274,22 +290,31 @@ footer {
     background-color: rgb(108, 21, 7);
 }
 
-.col-6,
-.col-3 {
+.col-* {
     padding: 1em;
     box-sizing: border-box;
 }
 
-.col-6 {
+.col-8 {
     width: 66%;
 }
 
-.col-3 {
+.col-6 {
+    width: 50%;
+}
+
+.col-4 {
     width: 33%;
 }
 
+.col-3 {
+    width: 25%;
+}
+
 @media only screen and (max-width: 768px) {
+    .col-8,
     .col-6,
+    .col-4,
     .col-3 {
         width: 100%;
     }
@@ -418,6 +443,7 @@ p.contact_success_box {
     font-weight: bold;
     color: white;
     text-decoration: none;
+    cursor: pointer;
 }
 
 #language > a:hover {
