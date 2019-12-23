@@ -8,11 +8,12 @@
 
     gtag('config', 'UA-142986755-1');
   </script>
+  <script src="js/core.js"></script>
   <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
   <title>Enture Camp: Entrepreneurship Skills School</title>
-  <link rel="stylesheet" href="/css/roadmap.css">
-  <link rel="stylesheet" href="/css/sahel.css">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="css/roadmap.css">
+  <link rel="stylesheet" href="css/sahel.css">
+  <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
 </head>
 <body>
@@ -202,7 +203,8 @@
         </div>
         <p class="submit-button">
           <a href="https://forms.gle/HTXpxPT5ufjvtREr6">
-            <input type="button" value="Application Form" class="contact-submit" />
+            <span class="contact-submit">Application Form</span>
+            <!-- <input type="button" value="Application Form" class="contact-submit" /> -->
           </a>
         </p>
       </div>
@@ -217,7 +219,8 @@
           <input class="contact-input white-input" type="text" required name="name" placeholder="Name" />
           <input class="contact-input white-input" type="email" required name="email" placeholder="Your email" />
           <textarea class="contact-commnent white-input" rows="2" cols="20" name="message" placeholder="Message..."></textarea>
-          <input type="submit" value="Send" id="submit-button" class="contact-submit" />
+          <!-- <input type="submit" value="Send" id="submit-button" class="contact-submit" /> -->
+          <span id="submit-button" onclick="clicked()" class="contact-submit">Send</span>
         </form>
       </div>
     </div>
@@ -227,4 +230,3 @@
   <p>&copy; All rights reserved for Enture Camp</p>
 </footer>
 </body>
-

@@ -388,7 +388,7 @@ textarea {
     border-radius: 5px 5px;
 }
 
-input.contact-submit {
+.contact-submit {
     width: 15em;
     color: #fff;
     border: 1px solid #03d7ab;
@@ -399,6 +399,7 @@ input.contact-submit {
     font-weight: 700;
     padding: 14px 35px;
     position: relative;
+    margin-top: 2em;
     text-transform: uppercase;
     -webkit-border-radius: 3px 3px;
     -moz-border-radius: 3px 3px;
@@ -406,9 +407,12 @@ input.contact-submit {
     transition: all .50s ease-in-out;
     -moz-transition: all .50s ease-in-out;
     -webkit-transition: all .50s ease-in-out;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
 }
 
-input.contact-submit:hover {
+.contact-submit:hover {
     color: #fff;
     background-color: #242f32;
     border: 1px solid #242f32;
