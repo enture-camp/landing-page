@@ -390,6 +390,7 @@ textarea {
 
 .contact-submit {
     width: 15em;
+    max-width: 10em;
     color: #fff;
     border: 1px solid #03d7ab;
     background-color: #03d7ab;
