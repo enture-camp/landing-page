@@ -23,6 +23,7 @@ body.rtl {
     background-size: cover;
     background-position: 50% 60%;
     position: relative;
+    padding-top: 7em;
 }
 
 #headline {
@@ -327,7 +328,7 @@ footer {
         width: 100%;
     }
     #header {
-        height: 33vh;
+        min-height: 33vh;
     }
     #headline {
         background-color: rgba(69, 69, 69, 0.8);
