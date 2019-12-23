@@ -70,11 +70,13 @@ p {
     text-decoration: none;
     font-weight: bold;
     cursor: pointer;
-    color: inherit;
+    color: #03d7ab;
+    display: inline-block;
+    transition: transform 0.3s ease;
 }
 
 #intro a:hover{
-    font-weight: normal;
+    transform: translateY(-0.2em);
 }
 
 .content {
@@ -110,10 +112,6 @@ section {
     flex-wrap: wrap;
     justify-content: space-around;
     list-style: none;
-}
-
-.flex-list > li > div {
-    padding: 0.25em;
 }
 
 .flex-list img {
@@ -301,14 +299,20 @@ footer {
 
 .col-6 {
     width: 50%;
+    box-sizing: border-box;
+    padding: 0.5em;
 }
 
 .col-4 {
     width: 33%;
+    box-sizing: border-box;
+    padding: 0.5em;
 }
 
 .col-3 {
     width: 25%;
+    box-sizing: border-box;
+    padding: 0.5em;
 }
 
 @media only screen and (max-width: 768px) {
@@ -438,6 +442,35 @@ p.contact_success_box {
     right: 1em;
 }
 
+
+#language {
+    color: #fff;
+    border: 1px solid #03d7ab;
+    background-color: #03d7ab;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.2em;
+    font-weight: 700;
+    padding: 10px 15px;
+    position: relative;
+    text-transform: uppercase;
+    -webkit-border-radius: 3px 3px;
+    -moz-border-radius: 3px 3px;
+    border-radius: 3px 3px;
+    transition: all .50s ease-in-out;
+    -moz-transition: all .50s ease-in-out;
+    -webkit-transition: all .50s ease-in-out;
+}
+
+#language:hover {
+    color: #fff;
+    background-color: #242f32;
+    border: 1px solid #242f32;
+    transition: all .50s ease-in-out;
+    -moz-transition: all .50s ease-in-out;
+    -webkit-transition: all .50s ease-in-out;
+}
+
 #language, #language > a, #language > a:hover, #language > a:active  {
     font-size: 1.05em;
     font-weight: bold;
@@ -447,7 +480,6 @@ p.contact_success_box {
 }
 
 #language > a:hover {
-    font-weight: normal;
 }
 
 footer {

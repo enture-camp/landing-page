@@ -82,6 +82,9 @@
     right: 30%;
     top: 1.5em;
     text-align: center;
+    font-size: 1.3em;
+    left: 0;
+    right: 0;
 }
 
 .timeline > li:nth-child(odd) {
